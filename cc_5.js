@@ -19,3 +19,9 @@ function calculateOvertimePay(rate, hours)
     return overtimeHours * (rate * 1.5);
 }
 
+//Step 5: Calculate Taxes (15% deduction)
+function calculateTaxes(grossPay)
+{return grossPay * 0.15;
+    
+}
+
