@@ -13,3 +13,9 @@ function calculateBasePay(rate, hours)
     return rate * regularHours;
 }
 
+//Step 4: Calculate overtime pay (time and a half >40 hrs)
+function calculateOvertimePay(rate, hours)
+{const overtimeHours = Math.max(0, hours - 40);
+    return overtimeHours * (rate * 1.5);
+}
+
